@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        display: ["Instrument Serif", "serif"],
+        sans: ["Public Sans", "sans-serif"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -47,6 +51,15 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        bone: "hsl(var(--bone))",
+        charcoal: "hsl(var(--charcoal))",
+        taupe: "hsl(var(--taupe))",
+        "slate-blue": "hsl(var(--slate-blue))",
+        "dusty-navy": "hsl(var(--dusty-navy))",
+        "grey-blue": "hsl(var(--grey-blue))",
+        "pale-blue": "hsl(var(--pale-blue))",
+        gold: "hsl(var(--gold))",
+        champagne: "hsl(var(--champagne))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -63,27 +76,29 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      boxShadow: {
+        soft: "var(--shadow-soft)",
+        card: "var(--shadow-card)",
+        "card-hover": "var(--shadow-hover)",
+      },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+        "underline-expand": {
+          from: { transform: "scaleX(0)" },
+          to: { transform: "scaleX(1)" },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "underline-expand": "underline-expand 0.4s cubic-bezier(0.22, 1, 0.36, 1) forwards",
       },
     },
   },
