@@ -51,10 +51,13 @@ const Index = () => {
             transition={{ duration: 1, delay: 0.3, ease: [0.2, 0, 0, 1] }}
             className="max-w-3xl"
           >
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-pale-blue leading-[1.05] mb-6">
+            <p className="text-xs uppercase tracking-[0.35em] text-gold mb-4">
+              Invest in Asia's next generation of real estate and hospitality growth
+            </p>
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-pale-blue leading-[1.05] mb-6 tracking-[0.04em]">
               Capital, directed with institutional discipline and private-market agility.
             </h1>
-            <p className="text-grey-blue text-lg leading-relaxed max-w-xl mb-10">
+            <p className="text-grey-blue text-lg leading-relaxed max-w-xl mb-10 tracking-[0.03em]">
               A private capital firm focused on building long-term value through real assets, scalable operating businesses, and future-focused industries.
             </p>
             <div className="flex flex-wrap gap-6">
